@@ -1,1 +1,38 @@
 /* your code */
+body {
+	border-radius: 20px;
+}
+th:first-child {
+	border-top-left-radius: 10px;
+}
+th:last-child {
+	border-top-right-radius: 10px;
+}
+tr:last-child > td:first-child {
+	border-bottom-left-radius: 10px;
+}
+tr:last-child > td:last-child {
+	border-bottom-right-radius: 10px;
+}
+
+table,th,td {
+	border-collapse: collapse;
+}
+
+table {
+	width: 100%;
+}
+
+tr > * {
+	padding: 10px;
+}
+
+tr >:is(th) {
+	background-color: #fc3322;
+	color: white;
+	text-align: left;
+}
+
+tr:nth-child(even) {
+	background-color: #e3e3e3;
+}
